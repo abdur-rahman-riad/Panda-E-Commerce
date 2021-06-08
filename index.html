@@ -4,13 +4,251 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Custom CSS File -->
+    <!-- BootStrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet"> 
+     <!-- Custom CSS File -->
     <link rel="stylesheet" href="style.css">
     <title>Panda E-Commerce | Riad</title>
 </head>
-<body>
+<body> 
+    <!-- NavBar Start -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="img/logo.png" alt="Panda Logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#shoes">SHOES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#backpack">BACKPACK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- NavBar End -->
 
-    <h1>Welcome to Panda E-Commerce</h1>
-    
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Slide Show Start -->
+    <div class="container" id="home">
+        <div id="carouselExampleInterval" class="carousel slide custom-bg-color" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <div class="row align-items-center">
+                    <div class="col-md-7 slide-content">
+                        <h1>Mega LCD TV For Sports</h1>
+                        <p>Powerful 8K AI upscaling powered by Neo Quantum Processor ensures you always get full 8K resolution.</p>
+                        <h1 class="price">$1200</h1>
+                        <button class="buy-btn">BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/tv.png" class="d-block w-100" alt="Slide Ones">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row align-items-center">
+                    <div class="col-md-7 slide-content">
+                      <h1>Beats Studio3 Headphone</h1>
+                      <p>Switch seamlessly between Noise Cancelling with real-time audio calibration, or Transparency Mode to stay aware of your surroundings.</p>
+                      <h1 class="price">$450</h1>
+                      <button class="buy-btn">BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/headphone.png" class="d-block w-100" alt="Slide Two">
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <div class="row align-items-center">
+                    <div class="col-md-7 slide-content">
+                      <h1>Xbox Series X</h1>
+                      <p>The Xbox Series X runs like an Xbox One swallowed a Lambo</p>
+                      <h1 class="price">$999</h1>
+                      <button class="buy-btn">BUY NOW</button>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/xbox.png" class="d-block w-100" alt="Slide Three">
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <!-- Slide Show End -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Categories Start -->
+    <div class="container categories">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="categorie-1">
+            <h1>Watch</h1>
+            <img src="img/watch.png" alt="Watch Categories">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="categorie-2">
+            <h1>Bags</h1>
+            <img src="img/bag.png" alt="Bag Categories">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="categorie-3">
+            <h1>Shoes</h1>
+            <img src="img/shoes.png" alt="Shoes Categories">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Categories End -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Shoes Product Start -->
+    <div class="container shoes" id="shoes">
+      <h2 class="p-title">Shoes</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/shoe-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Supply 2M3</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">$500</h5>
+              <button class="buy-btn">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/shoe-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike Sports 3W2</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">$420</h5>
+              <button class="buy-btn">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/shoe-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Max W2M</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">$299</h5>
+              <button class="buy-btn">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Shoes Product End -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Backpack Product Start -->
+    <div class="container backpack" id="backpack">
+      <h2 class="p-title">Backpack</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Backpack</h5>
+              <h5>$125</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <center><button class="buy-btn">BUY NOW</button></center>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blue Backpack</h5>
+              <h5>$320</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <center><button class="buy-btn">BUY NOW</button></center>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Black Backpack</h5>
+              <h5>$199</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <center><button class="buy-btn">BUY NOW</button></center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Backpack Product End -->
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Subscribe Part Design Start -->
+    <div class="container custom-bg-color subscribe-section">
+      <h3>LET'S STAY IN TOUCH</h3>
+      <h6>Get updates on sales, special and more</h6>
+      <!-- <input type="text" placeholder="Enter Your Email"> -->
+      <form>
+        <div class="mb-3">
+          <input type="email" placeholder="Enter Your Email" class="form-control" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+      </form>
+      <button class="buy-btn">SUBSCRIBE</button>
+    </div>
+    <!-- Subscribe Part Design End -->
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <footer id="contact">
+      <p>Copyright-Panda Commerce © All Rights Reserved</p>
+    </footer>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+   <!-- BootStrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 </body>
 </html>

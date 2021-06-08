@@ -1,3 +1,73 @@
-h1{
-    color: red;
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin-bottom: 50px;
+}
+.custom-bg-color{
+    background-color: #fceae8;
+    border-radius: 10px;
+}
+.carousel-item{
+    padding: 25px 50px;
+}
+.price{
+    color: crimson;
+}
+.buy-btn{
+    background-image: linear-gradient(to bottom, #ff589b 0%, #ff136f 100%);
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.slide-content{
+    padding-left: 75px;
+}
+.categorie-1, .categorie-2, .categorie-3{
+    border-radius: 10px;
+    border: none;
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.categorie-1{
+    background-color: orangered;
+}
+.categorie-2{
+    background-color: crimson;
+}
+.categorie-3{
+    background-color: darkblue;
+}
+.categories img{
+    width: 150px;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 10px #b6b4b4;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card-text{
+    text-align: justify;
+}
+.subscribe-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+footer{
+    text-align: center;
 }
